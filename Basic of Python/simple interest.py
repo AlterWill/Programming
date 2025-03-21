@@ -1,7 +1,9 @@
-a=int(input("Enter the principal amount:"))
-b=int(input("Enter the interest rate:"))
-c=int(input("Enter the time period:"))
+def si(p,r,t):
+    simple_interest=p*r*t/100
+    return simple_interest
 
-SI=(a*b*c)/100
-
-print("The simple interest is",SI)
+pinc=int(input('enter the number:'))
+rate=int(input('enter the rate of interest:'))
+time=int(input('enter the time:'))
+r=si(pinc,rate,time)
+print('Simple interest=',r)
