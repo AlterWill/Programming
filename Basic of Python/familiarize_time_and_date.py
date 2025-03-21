@@ -1,0 +1,17 @@
+from datetime import datetime
+import time
+d=datetime.now()
+print()
+f=d.strftime("%d/%m/%y")
+print(f)
+f=d.strftime("%d-%B-%A-%y")
+print(f)
+f=d.strftime("%d-%A-%W-%j")
+print(f)
+f=d.strftime("%d-%b-%a-%Y")
+print(f)
+f=d.strftime("%d-%M")
+m=d.strftime('%d-%B-%A-%Y')
+print(f,m)
+f=d.strftime("%c")
+print(f)
