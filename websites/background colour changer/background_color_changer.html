@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Background colour changer</title>
+    <style>
+        #blue{
+            background-color: blue;
+        }
+        #red{
+            background-color: red;
+        }
+        #green{
+            background-color: limegreen;
+        }
+        button{
+            border-radius: 4px;
+            width: 100px;
+            height: 25px;
+            margin: 10px;
+        }
+        body{
+            background-color: white;
+            position: relative;
+        }
+    </style>
+</head>
+<body>
+    <h2 style="color: rgb(255, 255, 255);">Colour flipper</h2>
+    <button id="blue" onclick="setcolor('blue')" >blue</button>
+    <button id="red"   onclick="setcolor('red')">red</button>
+    <button id="green" onclick="setcolor('green')">green</button>
+    <button id="random" onclick="randomcolor()">random</button>
+    <script src="background_color_changer.js"></script>
+</body>
+</html>

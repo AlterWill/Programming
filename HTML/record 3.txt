@@ -1,0 +1,14 @@
+<html>
+<body>
+<title>definition list<title>
+<h1><u>definition list</u></h1>
+<dt>html
+<dd>hyper text markup language
+<dt>www
+<dd>world wide web
+<dt>http
+<dd>hyper text tranfer protocol
+<dt>ftp
+<dd>file transfer protocol
+</body>
+</html>

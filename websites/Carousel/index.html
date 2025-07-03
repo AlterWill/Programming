@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>carousel</title>
+    <style>
+        body{
+            background-color: black;
+        }
+    </style>
+</head>
+<body>
+    <p style="color: white;">Images</p>
+    <div id="image"></div>
+    <button onclick=nextImage() style="color: blue;">Next</button>
+    <script>
+        let a=0;
+        let images =[
+            "https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/150px-HTML5_logo_and_wordmark.svg.png",
+            "https://img.icons8.com/?size=160&id=YjeKwnSQIBUq&format=png",
+            "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/JavaScript-logo.png/900px-JavaScript-logo.png?20120221235433"        ]   
+        function nextImage(){
+            a=(a+1)% images.length
+            document.getElementById("image").innerHTML=`<img src="${images[a]}" alt="Image" width="150" height="200">`;
+        }  
+        document.getElementById("image").innerHTML=`<img src="${images[a]}>" alt="Image" width="150" height="200">`;
+    </script>    
+</body>
+</html>

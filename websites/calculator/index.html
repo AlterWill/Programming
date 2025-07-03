@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>  
+    <div class="container">
+        <p id="display">Hello!</p>
+        <input type="button" value="1" class="input" id="number1" onclick="appendOnDisplay('1')">
+        <input type="button" value="2" class="input" id="number2" onclick="appendOnDisplay('2')">
+        <input type="button" value="3" class="input" id="number3" onclick="appendOnDisplay('3')">
+        <input type="button" value="+" class="input" id="signs+" onclick="appendOnDisplay('+')">
+        <input type="button" value="4" class="input" id="number4" onclick="appendOnDisplay('4')">
+        <input type="button" value="5" class="input" id="number5" onclick="appendOnDisplay('5')">
+        <input type="button" value="6" class="input" id="number6" onclick="appendOnDisplay('6')">
+        <input type="button" value="-" class="input" id="signs-" onclick="appendOnDisplay('-')">
+        <input type="button" value="7" class="input" id="number7" onclick="appendOnDisplay('7')">
+        <input type="button" value="8" class="input" id="number8" onclick="appendOnDisplay('8')">
+        <input type="button" value="9" class="input" id="number9" onclick="appendOnDisplay('9')">
+        <input type="button" value="x" class="input" id="signs*" onclick="appendOnDisplay('x')">
+        <input type="button" value="AC" class="input" id="clear" onclick="AC()">
+        <input type="button" value="0" class="input" id="number0" onclick="appendOnDisplay('0')">
+        <input type="button" value="." class="input" id="point" onclick="appendOnDisplay('.')">
+        <input type="button" value="÷" class="input" id="signs/" onclick="appendOnDisplay('÷')">
+        <input type="button" value="=" class="input" id="equal" onclick="display()">
+    </div>
+    <script src="srcipt.js"></script>
+</body>
+</html>

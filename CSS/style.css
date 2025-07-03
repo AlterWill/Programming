@@ -1,0 +1,24 @@
+p{
+    color: blue;
+    background: rgb(37, 197, 34);
+    font-size:100px;
+    font-style:italic;
+}
+.hi{
+    font-size: 100px;
+    color: white;
+    background: black;
+    margin: 10px;
+    border: 5px solid red;
+    float: left;
+}
+#box{
+    background: blue;
+    color: green;
+    width: 100px;
+    height: 100px;
+    padding: 20px;
+    position: absolute;
+    top: 100px;
+    left: 50px;
+}

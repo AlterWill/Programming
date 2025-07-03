@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Sample Front End</title>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                margin: 0;
+                padding: 0;
+                background-color: #f4f4f4;
+            }
+            header {
+                background-color: #333;
+                color: #fff;
+                padding: 10px 0;
+            }
+            nav ul {
+                list-style: none;
+                display: flex;
+                justify-content: center;
+                margin: 0;
+                padding: 0;
+            }
+            nav li {
+                margin: 0 15px;
+            }
+            nav a {
+                text-decoration: none;
+                color: #fff;
+                font-weight: bold;
+            }
+            section {
+                max-width: 800px;
+                margin: 20px auto;
+                padding: 20px;
+                background: #fff;
+                border-radius: 8px;
+                box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            }
+            form label {
+                display: block;
+                margin-bottom: 5px;
+                font-weight: bold;
+            }
+            form input,
+            form textarea {
+                width: 100%;
+                padding: 8px;
+                margin-bottom: 15px;
+                border: 1px solid #ccc;
+                border-radius: 4px;
+            }
+            form button {
+                padding: 10px 20px;
+                border: none;
+                background-color: #333;
+                color: #fff;
+                border-radius: 4px;
+                cursor: pointer;
+            }
+            form button:hover {
+                background-color: #555;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#message">Message</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#details">Details</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <section id="home">
+            <h2>Home</h2>
+            <p>Welcome to our website! Use the navigation menu to explore.</p>
+        </section>
+
+        <section id="message">
+            <h2>Message</h2>
+            <form action="#" method="post">
+                <label for="name">Name:</label>
+                <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    placeholder="Your name"
+                    required
+                />
+
+                <label for="email">Email:</label>
+                <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="you@example.com"
+                    required
+                />
+
+                <label for="subject">Subject:</label>
+                <input
+                    type="text"
+                    id="subject"
+                    name="subject"
+                    placeholder="Subject of your message"
+                />
+
+                <label for="message-text">Message:</label>
+                <textarea
+                    id="message-text"
+                    name="message-text"
+                    rows="5"
+                    placeholder="Write your message here..."
+                    required
+                ></textarea>
+
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+
+        <section id="about">
+            <h2>About</h2>
+            <p>
+                We are a team dedicated to providing the best front-end
+                solutions.
+            </p>
+        </section>
+
+        <section id="details">
+            <h2>Details</h2>
+            <p>
+                Here you can find detailed information about our services and
+                offerings.
+            </p>
+        </section>
+    </body>
+</html>

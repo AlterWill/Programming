@@ -1,0 +1,225 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Register - Create Account</title>
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+
+            body {
+                font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+                background: linear-gradient(135deg, #00c9ff 0%, #92fe9d 100%);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                min-height: 100vh;
+                padding: 20px;
+            }
+
+            .register-container {
+                background: rgba(255, 255, 255, 0.95);
+                backdrop-filter: blur(10px);
+                padding: 40px;
+                border-radius: 20px;
+                box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+                width: 100%;
+                max-width: 420px;
+                border: 1px solid rgba(255, 255, 255, 0.2);
+            }
+
+            h2 {
+                text-align: center;
+                color: #333;
+                margin-bottom: 30px;
+                font-size: 28px;
+                font-weight: 300;
+            }
+
+            .input-group {
+                position: relative;
+                margin-bottom: 25px;
+            }
+
+            input[type="text"],
+            input[type="password"],
+            input[type="email"] {
+                width: 100%;
+                padding: 15px 20px;
+                border: 2px solid #e1e1e1;
+                border-radius: 12px;
+                font-size: 16px;
+                transition: all 0.3s ease;
+                background: rgba(255, 255, 255, 0.9);
+            }
+
+            input[type="text"]:focus,
+            input[type="password"]:focus,
+            input[type="email"]:focus {
+                outline: none;
+                border-color: #00c9ff;
+                box-shadow: 0 0 0 3px rgba(0, 201, 255, 0.1);
+                transform: translateY(-2px);
+            }
+
+            .register-btn {
+                width: 100%;
+                background: linear-gradient(135deg, #00c9ff 0%, #92fe9d 100%);
+                color: white;
+                padding: 15px;
+                border: none;
+                border-radius: 12px;
+                font-size: 16px;
+                font-weight: 600;
+                cursor: pointer;
+                transition: all 0.3s ease;
+                margin-top: 10px;
+            }
+
+            .register-btn:hover {
+                transform: translateY(-2px);
+                box-shadow: 0 10px 25px rgba(0, 201, 255, 0.3);
+            }
+
+            .register-btn:active {
+                transform: translateY(0);
+            }
+
+            .login-link {
+                text-align: center;
+                margin-top: 25px;
+                padding-top: 20px;
+                border-top: 1px solid #e1e1e1;
+            }
+
+            .login-link a {
+                color: #00c9ff;
+                text-decoration: none;
+                font-weight: 500;
+                transition: color 0.3s ease;
+            }
+
+            .login-link a:hover {
+                color: #0099cc;
+                text-decoration: underline;
+            }
+
+            .error {
+                background: linear-gradient(135deg, #ff6b6b, #ee5a24);
+                color: white;
+                padding: 12px 20px;
+                border-radius: 8px;
+                margin-bottom: 20px;
+                text-align: center;
+                font-weight: 500;
+                animation: shake 0.5s ease-in-out;
+            }
+
+            .success {
+                background: linear-gradient(135deg, #00c9ff, #92fe9d);
+                color: white;
+                padding: 12px 20px;
+                border-radius: 8px;
+                margin-bottom: 20px;
+                text-align: center;
+                font-weight: 500;
+                animation: slideDown 0.5s ease-in-out;
+            }
+
+            @keyframes shake {
+                0%,
+                100% {
+                    transform: translateX(0);
+                }
+                25% {
+                    transform: translateX(-5px);
+                }
+                75% {
+                    transform: translateX(5px);
+                }
+            }
+
+            @keyframes slideDown {
+                from {
+                    opacity: 0;
+                    transform: translateY(-20px);
+                }
+                to {
+                    opacity: 1;
+                    transform: translateY(0);
+                }
+            }
+
+            .welcome-text {
+                text-align: center;
+                color: #666;
+                margin-bottom: 20px;
+                font-size: 14px;
+            }
+
+            @media (max-width: 480px) {
+                .register-container {
+                    padding: 30px 20px;
+                    margin: 0 10px;
+                }
+
+                h2 {
+                    font-size: 24px;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="register-container">
+            <h2>Create Account</h2>
+            <p class="welcome-text">Join us today! It's quick and easy.</p>
+
+            {% if error %}
+            <div class="error">{{ error }}</div>
+            {% endif %} {% if success %}
+            <div class="success">{{ success }}</div>
+            {% endif %}
+
+            <form action="/createaccount" method="POST">
+                <div class="input-group">
+                    <input
+                        type="text"
+                        name="username"
+                        placeholder="Choose a username"
+                        required
+                    />
+                </div>
+
+                <div class="input-group">
+                    <input
+                        type="password"
+                        name="password"
+                        placeholder="Create a password"
+                        required
+                    />
+                </div>
+
+                <div class="input-group">
+                    <input
+                        type="email"
+                        name="email id"
+                        placeholder="Enter your email"
+                        required
+                    />
+                </div>
+
+                <button type="submit" class="register-btn">
+                    Create Account
+                </button>
+            </form>
+
+            <div class="login-link">
+                <p>Already have an account? <a href="/">Sign in here</a></p>
+            </div>
+        </div>
+    </body>
+</html>

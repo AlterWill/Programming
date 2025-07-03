@@ -1,0 +1,4 @@
+C:\Users\Renetta\Desktop\Rishon\visual stuido code program\C#\tempProject\tempProject\tempProject\tempProject\obj\Debug\net9.0\tempProject.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Renetta\Desktop\Rishon\visual stuido code program\C#\tempProject\tempProject\tempProject\tempProject\obj\Debug\net9.0\tempProject.AssemblyInfoInputs.cache
+C:\Users\Renetta\Desktop\Rishon\visual stuido code program\C#\tempProject\tempProject\tempProject\tempProject\obj\Debug\net9.0\tempProject.AssemblyInfo.cs
+C:\Users\Renetta\Desktop\Rishon\visual stuido code program\C#\tempProject\tempProject\tempProject\tempProject\obj\Debug\net9.0\tempProject.csproj.CoreCompileInputs.cache
